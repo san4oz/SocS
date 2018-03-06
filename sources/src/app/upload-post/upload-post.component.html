@@ -1,0 +1,10 @@
+<div class="col s12 m6 l4">
+    <div (click)="clickOnUpload()" class="card medium" title="Add new post">
+        <form>
+            <div>
+                <span class="plus-sign"></span>   
+                <input  multiple="multiple" (change)="handleUploadedFiles($event.target.files)" #uploadPostButton type="file" style="display:none;" />                                     
+            </div>
+        </form>
+    </div>
+</div>

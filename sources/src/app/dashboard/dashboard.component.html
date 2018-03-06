@@ -1,0 +1,13 @@
+<div class="section">
+    <h1>I'm dashboard</h1>        
+    <div class="row">
+        <div class="col s12">
+            <div class="section">
+                <upload-post ></upload-post>
+                <div *ngFor="let post of posts">
+                    <post [post]=post></post>
+                </div>
+            </div>                
+        </div>
+    </div>
+</div>
