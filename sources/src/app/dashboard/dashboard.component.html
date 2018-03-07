@@ -1,13 +1,8 @@
-<div class="section">
-    <h1>I'm dashboard</h1>        
-    <div class="row">
-        <div class="col s12">
-            <div class="section">
-                <upload-post ></upload-post>
-                <div *ngFor="let post of posts">
-                    <post [post]=post></post>
-                </div>
-            </div>                
-        </div>
-    </div>
-</div>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+    <ng-container *ngFor="let post of posts">
+        <mat-grid-tile>      
+               1                    
+        </mat-grid-tile>
+    </ng-container>
+</mat-grid-list>

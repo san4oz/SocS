@@ -1,20 +1,27 @@
-<div class="col s12 m6 l4">
-    <div class="card medium">
-              <div class="card-image">
-                <img [src]="post.ImageUrl">
-              </div>
-              <div class="card-content">
-                <div>
-                  <input [owlDateTime]="dt1" [owlDateTimeTrigger]="dt1" placeholder="Date Time">
-                  <owl-date-time [pickerMode]="'dialog'" #dt1></owl-date-time>
-                </div>
-                <div>
-                </div>
-              </div>
-              <div class="card-action">
-                  <img class="social-network-icon" src="../assets/icons/facebook.png"/>
-                  <img class="social-network-icon" src="../assets/icons/facebook.png"/>
-                  <img class="social-network-icon" src="../assets/icons/facebook.png"/>               
-              </div>
-    </div>
-</div>
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Publish date</mat-card-title>
+    <mat-card-subtitle>
+        <div>
+          <editable text="place real value here">
+            <datetimepicker></datetimepicker>
+          </editable>
+          </div>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="post.ImageUrl">
+  <mat-card-content>
+    <p>
+      <editable text="place real value here">
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </editable>
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>

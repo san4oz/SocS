@@ -1,0 +1,7 @@
+<ng-container *ngIf="editEnabled; else plainText">
+    <ng-content></ng-content>
+</ng-container>
+<ng-template #plainText>{{text}}</ng-template>
+<button (click)="edit()">
+    <i class="fa fa-edit"></i>
+</button>
